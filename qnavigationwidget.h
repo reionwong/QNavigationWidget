@@ -13,6 +13,7 @@ public:
     ~QNavigationWidget();
 
     void addItem(const QString &title);
+    void setWidth(const int &width);
 
 protected:
     void paintEvent(QPaintEvent *);

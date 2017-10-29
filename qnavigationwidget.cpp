@@ -27,6 +27,11 @@ void QNavigationWidget::addItem(const QString &title)
     repaint();
 }
 
+void QNavigationWidget::setWidth(const int &width)
+{
+    setFixedWidth(width);
+}
+
 void QNavigationWidget::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);

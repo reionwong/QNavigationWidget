@@ -12,6 +12,7 @@
 
 # Qt-es
 
+/build
 /.qmake.cache
 /.qmake.stash
 *.pro.user

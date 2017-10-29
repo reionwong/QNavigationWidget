@@ -6,6 +6,7 @@ QNavigationWidget::QNavigationWidget(QWidget *parent) : QWidget(parent)
     backgroundColor = "#E4E4E4";
     rowHeight = 40;
 
+    setMouseTracking(true);
     setFixedWidth(200);
 }
 
@@ -39,4 +40,19 @@ void QNavigationWidget::paintEvent(QPaintEvent *)
 
         ++count;
     }
+}
+
+void QNavigationWidget::mouseMoveEvent(QMouseEvent *e)
+{
+    
+}
+
+void QNavigationWidget::mousePressEvent(QMouseEvent *e)
+{
+    
+}
+
+void QNavigationWidget::mouseReleaseEvent(QMouseEvent *e)
+{
+    
 }

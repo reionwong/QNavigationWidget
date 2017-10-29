@@ -2,6 +2,7 @@
 #define QNAVIGATIONWIDGET_H
 
 #include <QWidget>
+#include <QMouseEvent>
 
 class QNavigationWidget : public QWidget
 {
@@ -15,6 +16,9 @@ public:
 
 protected:
     void paintEvent(QPaintEvent *);
+    void mouseMoveEvent(QMouseEvent *);
+    void mousePressEvent(QMouseEvent *);
+    void mouseReleaseEvent(QMouseEvent *);
 
 private:
     QList<QString> listItems;

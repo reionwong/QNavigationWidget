@@ -24,6 +24,7 @@ private:
     QList<QString> listItems;
     QList<QString> selectItems;
     QString backgroundColor;
+    QString selectedColor;
     int rowHeight;
 };
 

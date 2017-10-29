@@ -15,6 +15,7 @@ public:
 
 private:
     QWidget *mainWidget;
+    QWidget *rightWidget;
     QHBoxLayout *mainLayout;
     QNavigationWidget *navigationWidget;
 };	

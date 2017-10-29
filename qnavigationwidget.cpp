@@ -9,7 +9,7 @@ QNavigationWidget::QNavigationWidget(QWidget *parent) : QWidget(parent)
     rowHeight = 40;
 
     setMouseTracking(true);
-    setFixedWidth(200);
+    setFixedWidth(150);
 }
 
 QNavigationWidget::~QNavigationWidget()
@@ -19,6 +19,10 @@ QNavigationWidget::~QNavigationWidget()
 void QNavigationWidget::addItem(const QString &title)
 {
     listItems << title;
+    
+    if (listItems.count() == 1) {
+        selectItems << title;
+    }
 
     repaint();
 }
@@ -48,7 +52,7 @@ void QNavigationWidget::paintEvent(QPaintEvent *)
             painter.setPen("#202020");
             painter.fillPath(itemPath, QColor(backgroundColor));
         }
-        painter.drawText(QRect(0, count * rowHeight, width(), rowHeight), Qt::AlignCenter, str);
+        painter.drawText(QRect(0, count * rowHeight, width(), rowHeight), Qt::AlignVCenter | Qt::AlignHCenter, str);
 
         ++count;
     }

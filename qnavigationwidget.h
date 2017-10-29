@@ -16,6 +16,7 @@ public:
     void setWidth(const int &width);
     void setBackgroundColor(const QString &color);
     void setSelectColor(const QString &color);
+    void setRowHeight(const int &height);
 
 protected:
     void paintEvent(QPaintEvent *);

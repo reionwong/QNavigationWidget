@@ -46,6 +46,13 @@ void QNavigationWidget::setSelectColor(const QString &color)
     repaint();
 }
 
+void QNavigationWidget::setRowHeight(const int &height)
+{
+    rowHeight = height;
+
+    repaint();
+}
+
 void QNavigationWidget::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);

@@ -11,6 +11,7 @@ MainWindow::MainWindow(QMainWindow *parent) : QMainWindow(parent)
     tipsLabel = new QLabel("Item: 0");
 
     rightWidget->setFixedWidth(600 - navigationWidget->width());
+    navigationWidget->setRowHeight(50);
     navigationWidget->addItem("常规");
     navigationWidget->addItem("画面");
     navigationWidget->addItem("字幕");

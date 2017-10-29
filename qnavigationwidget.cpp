@@ -32,6 +32,13 @@ void QNavigationWidget::setWidth(const int &width)
     setFixedWidth(width);
 }
 
+void QNavigationWidget::setBackgroundColor(const QString &color)
+{
+    backgroundColor = color;
+
+    repaint();
+}
+
 void QNavigationWidget::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);

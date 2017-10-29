@@ -13,6 +13,10 @@ public:
 
 protected:
     void paintEvent(QPaintEvent *);
-};	
+
+private:
+    QList<QString> listItems;
+    QString backgroundColor;
+};
 
 #endif

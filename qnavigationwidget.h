@@ -27,7 +27,7 @@ private:
     QString selectedColor;
     int rowHeight;
 
-Q_SIGNALS:
+signals:
     void currentItemChanged(const int &index);
 };
 

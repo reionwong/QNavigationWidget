@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QHBoxLayout>
+#include <QLabel>
 #include "qnavigationwidget.h"
 
 class MainWindow : public QMainWindow
@@ -17,7 +18,9 @@ private:
     QWidget *mainWidget;
     QWidget *rightWidget;
     QHBoxLayout *mainLayout;
+    QVBoxLayout *rightLayout;
     QNavigationWidget *navigationWidget;
+    QLabel *tipsLabel;
 };	
 
 #endif

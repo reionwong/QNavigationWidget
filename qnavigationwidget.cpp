@@ -60,7 +60,9 @@ void QNavigationWidget::paintEvent(QPaintEvent *)
 
 void QNavigationWidget::mouseMoveEvent(QMouseEvent *e)
 {
-    
+    if (e->y() / rowHeight < listItems.count()) {
+        // qDebug() << e->y() / rowHeight;
+    }
 }
 
 void QNavigationWidget::mousePressEvent(QMouseEvent *e)
@@ -70,6 +72,8 @@ void QNavigationWidget::mousePressEvent(QMouseEvent *e)
 
         selectItems.clear();
         selectItems << listItems.at(currentIndex);
+
+        emit currentItemChanged(currentIndex);
 
         repaint();
     }

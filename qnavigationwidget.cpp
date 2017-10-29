@@ -39,6 +39,13 @@ void QNavigationWidget::setBackgroundColor(const QString &color)
     repaint();
 }
 
+void QNavigationWidget::setSelectColor(const QString &color)
+{
+    selectedColor = color;
+
+    repaint();
+}
+
 void QNavigationWidget::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);

@@ -15,6 +15,7 @@ public:
     void addItem(const QString &title);
     void setWidth(const int &width);
     void setBackgroundColor(const QString &color);
+    void setSelectColor(const QString &color);
 
 protected:
     void paintEvent(QPaintEvent *);

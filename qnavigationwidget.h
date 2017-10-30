@@ -26,10 +26,10 @@ protected:
 
 private:
     QList<QString> listItems;
-    QList<QString> selectItems;
     QString backgroundColor;
     QString selectedColor;
     int rowHeight;
+    int currentIndex;
 
 signals:
     void currentItemChanged(const int &index);

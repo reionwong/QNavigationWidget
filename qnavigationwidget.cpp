@@ -21,7 +21,7 @@ void QNavigationWidget::addItem(const QString &title)
 {
     listItems << title;
 
-    repaint();
+    update();
 }
 
 void QNavigationWidget::setWidth(const int &width)
@@ -33,21 +33,21 @@ void QNavigationWidget::setBackgroundColor(const QString &color)
 {
     backgroundColor = color;
 
-    repaint();
+    update();
 }
 
 void QNavigationWidget::setSelectColor(const QString &color)
 {
     selectedColor = color;
 
-    repaint();
+    update();
 }
 
 void QNavigationWidget::setRowHeight(const int &height)
 {
     rowHeight = height;
 
-    repaint();
+    update();
 }
 
 void QNavigationWidget::paintEvent(QPaintEvent *)
@@ -94,7 +94,7 @@ void QNavigationWidget::mousePressEvent(QMouseEvent *e)
 
         emit currentItemChanged(currentIndex);
 
-        repaint();
+        update();
     }
 }
 
